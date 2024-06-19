@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  <link rel="import" href="./assets/fonts/Figtree-VariableFont_wght.ttf">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: hsl(60, 80%, 63%);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .blog-preview{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 25px;
+      background-color: white;
+      max-width: 350px;
+      max-height: 600px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 1px black;
+      padding-top: 15px;
+    }
+    .illustration-image{
+      width: 300px;
+      border-radius: 10px;
+    }
+    .blog-preview .title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: orange;
+      height: 32px;
+      width: 90px;
+      margin-top:20px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .publish-blog{
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+     .blog-preview .content-title{
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      margin-top: 7px;
+      transition: color 0.15s;
+      cursor: pointer;
+    }
+    .content-title:hover{
+      color: orange;
+    }
+    .para-content{
+      margin-right: 10px;
+      margin-bottom: 15px;
+      font-size:15px;
+      line-height: 20px;
+      color: gray;
+    }
+    .profile-content{
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+    .avatar-image{
+      width: 40px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blog-preview">
+    <img src="./assets/images/illustration-article.svg" alt="illutration" class="illustration-image">
+  
+    <div class="title">Learning</div>
+
+   <div class="publish-blog">Published 21 Dec 2023</div>
+
+  <div class="content-title">HTML & CSS foundations</div>
+
+  <div class="para-content">
+    These languages are the backbone of every website, defining structure, content, and presentation.</div>
+
+  <div class="profile-content">
+    <img src="./assets/images/image-avatar.webp" alt="image" class="avatar-image">
+    Greg Hooper</div>
+  </div>
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Prathap</a>.
+  </div> -->
+</body>
+</html>
